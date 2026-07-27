@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of https://forhims.com/.well-known/*
+host: https://forhims.com
+notes: >-
+  forhims.com sits behind Cloudflare bot protection; automated fetches are
+  intermittently challenged (HTTP 403). The security.txt below was successfully
+  read by the security-programs probe and its Contact/Policy fields verified.
+  Raw verbatim capture was not re-obtainable at index time, so the verified
+  fields are recorded structurally rather than as a raw file.
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  type: SecurityTxt
+  fields:
+    contact: mailto:security@forhims.com
+    policy: https://forhims.com/vulnerability-disclosure-terms
+- path: /.well-known/openid-configuration
+  status: 403
+- path: /.well-known/oauth-authorization-server
+  status: 403
+- path: /.well-known/api-catalog
+  status: 403

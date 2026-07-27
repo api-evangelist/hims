@@ -1,8 +1,28 @@
 aid: hims
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hims.png
 name: Hims
-description: Hims is a company surfaced as a portfolio company of 8vc, redpoint-ventures, sv-angel and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Hims is the men's brand of Hims & Hers Health, Inc. (NYSE: HIMS), a U.S.-based
+  direct-to-consumer telehealth platform. Through forhims.com it connects patients
+  with licensed medical providers and affiliated pharmacies to offer treatment for
+  sexual health, hair loss, dermatology and skincare, mental health, and weight loss,
+  including provider consultations, personalized prescriptions, and recurring
+  subscription fulfillment shipped to the customer. Hims & Hers operates the sibling
+  Hers brand for women and runs its own pharmacy and fulfillment operations. This
+  API Evangelist profile tracks the company's public developer, security, and trust
+  surface; Hims does not currently publish a public developer API, so this record is
+  identity- and security-focused rather than spec-bearing.
 url: https://raw.githubusercontent.com/api-evangelist/hims/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +34,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Health
+- Healthcare
+- Telehealth
+- Wellness
+- Pharmacy
+- Consumer
+- E-commerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +51,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/hims-vulnerability-disclosure.yml
+- type: Security
+  url: https://forhims.com/vulnerability-disclosure-terms
+- type: DomainSecurity
+  url: security/hims-domain-security.yml
+- type: WellKnown
+  url: well-known/hims-well-known.yml
+- type: SecurityTxt
+  url: well-known/hims-well-known.yml
 - type: Website
   url: https://forhims.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
