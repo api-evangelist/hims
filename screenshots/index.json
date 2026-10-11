@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "hims",
+    "captured_at": "2026-10-11T185744",
+    "source_url": "https://forhims.com",
+    "source_type": "Website",
+    "file": "hims-2026-10-11T185744.png",
+    "bytes": 49272,
+    "capture": "playwright-local"
+  }
+]
